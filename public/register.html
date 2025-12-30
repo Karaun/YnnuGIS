@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>YnnuGIS - 注册</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col">
+  <div class="theme-strip"></div>
+  <main class="flex-1 max-w-5xl mx-auto w-full p-0 md:p-6">
+    <div class="grid grid-cols-1 md:grid-cols-5 bg-white md:rounded-2xl md:shadow-xl overflow-hidden">
+      <aside class="hidden md:block col-span-2 bg-gradient-to-b from-blue-600 to-blue-500 text-white p-8">
+        <div class="text-2xl font-extrabold">YnnuGIS</div>
+        <p class="mt-2 text-blue-50">创建账户，开启移动端 GIS 工作流</p>
+        <ol class="mt-6 space-y-3 text-sm text-blue-50/90 list-decimal list-inside">
+          <li>填写基本信息</li>
+          <li>验证并完成注册</li>
+          <li>在应用中采集与管理数据</li>
+        </ol>
+      </aside>
+      <section class="col-span-3 p-6 md:p-8">
+        <div class="mb-6">
+          <h1 class="text-xl md:text-2xl font-bold text-slate-800">注册账号</h1>
+          <p class="text-slate-500 text-sm">请填写以下信息</p>
+        </div>
+        <form id="regForm" class="space-y-4">
+          <div>
+            <label class="block text-sm text-slate-600 mb-1">用户名</label>
+            <input id="r_username" type="text" class="w-full input" placeholder="请输入用户名" required>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-sm text-slate-600 mb-1">密码</label>
+              <input id="r_password" type="password" class="w-full input" placeholder="请输入密码" required>
+            </div>
+            <div>
+              <label class="block text-sm text-slate-600 mb-1">昵称（显示名，可选）</label>
+              <input id="r_display" type="text" class="w-full input" placeholder="例如：张三">
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <a href="/" class="text-sm link-primary">返回登录</a>
+            <button type="submit" class="btn-primary">注册</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+  <div class="theme-strip"></div>
+  <script src="/config.js"></script>
+  <script src="/js/register.js"></script>
+</body>
+</html>

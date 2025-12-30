@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "username": "admin",
+      "password": "123456",
+      "displayName": "管理员"
+    }
+  ],
+  "samples": [
+    {
+      "id": "L1sJ0yfqQn",
+      "name": "昆明1",
+      "category": "测试",
+      "description": "无",
+      "lon": 102.705415,
+      "lat": 25.051322,
+      "createdAt": 1767101889832
+    }
+  ],
+  "customTiles": [
+    {
+      "id": "0g2cAMkq",
+      "name": "111",
+      "urlTemplate": "1111",
+      "minZoom": 0,
+      "maxZoom": 20
+    },
+    {
+      "id": "BqVJ5sma",
+      "name": "111",
+      "urlTemplate": "111",
+      "minZoom": 0,
+      "maxZoom": 20
+    }
+  ]
+}

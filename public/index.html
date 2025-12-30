@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>YnnuGIS - 登录</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col">
+  <div class="theme-strip"></div>
+  <main class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-0 max-w-5xl mx-auto w-full p-0 md:p-6">
+    <section class="hidden md:flex flex-col justify-center rounded-l-2xl bg-gradient-to-br from-blue-700 to-blue-500 text-white p-10">
+      <div>
+        <div class="text-3xl font-extrabold tracking-tight">YnnuGIS</div>
+        <p class="mt-3 text-blue-50 leading-relaxed">轻量·高效·移动端 GIS 应用平台</p>
+        <ul class="mt-6 space-y-2 text-sm text-blue-50/90">
+          <li>• 账号登录与注册</li>
+          <li>• 地图定位与底图切换</li>
+          <li>• 数据采集与列表管理</li>
+        </ul>
+      </div>
+    </section>
+    <section class="flex items-center justify-center bg-white md:rounded-r-2xl md:shadow-xl p-6">
+      <div class="w-full max-w-sm">
+        <div class="text-center mb-6 md:mb-8">
+          <h1 class="text-2xl font-bold text-slate-800 md:hidden">YnnuGIS</h1>
+          <p class="text-slate-500 text-sm">请登录以继续</p>
+        </div>
+        <form id="loginForm" class="space-y-4">
+          <div>
+            <label class="block text-sm text-slate-600 mb-1">用户名</label>
+            <input id="username" type="text" class="w-full input" placeholder="请输入用户名" required>
+          </div>
+          <div>
+            <label class="block text-sm text-slate-600 mb-1">密码</label>
+            <input id="password" type="password" class="w-full input" placeholder="请输入密码" required>
+          </div>
+          <div class="flex items-center justify-end">
+            <button type="submit" class="btn-primary">登录</button>
+          </div>
+        </form>
+        
+      </div>
+    </section>
+  </main>
+  <div class="theme-strip"></div>
+  <script src="/config.js"></script>
+  <script src="/js/login.js"></script>
+</body>
+</html>
